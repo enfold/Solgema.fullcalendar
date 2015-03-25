@@ -39,6 +39,8 @@ try:
     HAS_RECURRENCE_SUPPORT = True
 except ImportError:
     HAS_RECURRENCE_SUPPORT = False
+#XXX: Force recurrence off
+HAS_RECURRENCE_SUPPORT = False
 
 try:
     from plone.app.collection.interfaces import ICollection
